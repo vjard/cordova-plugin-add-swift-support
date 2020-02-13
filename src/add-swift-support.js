@@ -75,9 +75,11 @@ module.exports = context => {
         // If the bridging header doesn't exist, we create it with the minimum
         // Cordova/CDV.h import.
         bridgingHeaderContent = ['//',
-          '//  Use this file to import your target\'s public headers that you would like to expose to Swift.',
-          '//',
-          '#import <Cordova/CDV.h>'];
+        '//  Use this file to import your target\'s public headers that you would like to expose to Swift.',
+        '//',
+        '#import <Cordova/CDV.h>',
+        '#import <VoxeetSDK/VoxeetSDK.h>',
+        '#import <VoxeetConferenceKit/VoxeetConferenceKit.h>'];
         fs.writeFileSync(bridgingHeaderPath, bridgingHeaderContent.join('\n'), { encoding: 'utf-8', flag: 'w' });
         xcodeProject.addHeaderFile('Bridging-Header.h');
       }

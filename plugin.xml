@@ -5,7 +5,7 @@
   <license>Apache 2.0</license>
   <description>Cordova plugin to add swift support</description>
   <keywords>cordova,phonegap,swift,plugin</keywords>
-  <repo>https://github.com/akofman/cordova-plugin-add-swift-support.git</repo>
+  <repo>https://github.com/vjard/cordova-plugin-add-swift-support.git</repo>
 
   <hook type="after_prepare" src="src/add-swift-support.js" />
 
